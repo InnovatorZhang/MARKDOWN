@@ -11,6 +11,8 @@ MarkDown语法示例
     * [文字高亮](#文字高亮)
     * [文本换行](#文本换行)
     * [字体](#字体)
+* [图片](#图片)
+* [链接](#链接)
 
 ## 标题
 
@@ -165,8 +167,9 @@ title:鼠标悬停时显示的文本(可省略)
 示例:
 ![绝对地址](https://innovatorzhang.github.io/images/cat.gif)
 ![相对地址](/images/one.gif)
-![高级写法][SB] SB在文档最后定义
+![高级写法][SB] SB在文档最后定义，这里后面那个是方括号哦！
 ```
+`最后一种写法SB在文档最后有定义:[SB]:/images/two.jpg "SB证"`
 
 ### 效果
 
@@ -176,6 +179,23 @@ title:鼠标悬停时显示的文本(可省略)
 ![高级写法][SB]
 
 
+## 链接
+
+|名称|语法|效果
+|---|----|---
+|我的微博|`[微博](https://weibo.com/u/5746068346?refer_flag=1001030101_&is_all=1 "我的微博")`|[微博](https://weibo.com/u/5746068346?refer_flag=1001030101_&is_all=1 "我的微博")
+|微博写法二|`[微博][weibo]`|[微博][weibo]
+|我的知乎|`[知乎][zhihu]`|[知乎][zhihu]
+|我的博客|`[博客][blog]`|[博客][blog]
+|相对地址|`[使用相对地址](/blogs/关于ss的使用.md)`|[使用相对地址](/blogs/关于ss的使用.md)
+```
+可以看出你可以使用 []() 的语法直接给出URL,也可以使用定义的方法定义一个URL，以后用[][]的方式使用
+相当于是一个变量，方便以后的使用。
+上面那个微博的效果是一样的。
+比如：在文档末尾定义了
+[blog]:https://innovatorzhang.github.io "我的博客"
+之后，以后要使用这个URL只需要[blog]就行了，减少了很多的重复
+```
 
 
 
@@ -186,4 +206,6 @@ title:鼠标悬停时显示的文本(可省略)
 
 
 [SB]:/images/two.jpg "SB证"
-
+[zhihu]:https://www.zhihu.com/people/zhang-zhong-hao-62 "我的知乎"
+[blog]:https://innovatorzhang.github.io "我的博客"
+[weibo]:https://weibo.com/u/5746068346?refer_flag=1001030101_&is_all=1 "我的微博"
