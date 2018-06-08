@@ -184,5 +184,5 @@ title:鼠标悬停时显示的文本(可省略)
 
 
 
-[SB]:/images/two.jpg "SB证"
+[SB]:/images/one.gif "SB证"
 
