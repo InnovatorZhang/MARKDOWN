@@ -170,5 +170,6 @@ title:鼠标悬停时显示的文本(可省略)
 ### 效果
 
 示例:
-![绝对地址](https://innovatorzhang.github.io/images/cat.gif)
-![相对地址](/images/one.gif)
+![绝对地址](https://innovatorzhang.github.io/images/cat.gif "MiniCat")
+![相对地址](/images/one.gif "睿智")
+
