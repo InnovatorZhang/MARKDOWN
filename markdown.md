@@ -13,6 +13,8 @@ MarkDown语法示例
     * [字体](#字体)
 * [图片](#图片)
 * [链接](#链接)
+    * [文字链接](#文字链接)
+    * [图片链接](#图片链接)
 
 ## 标题
 
@@ -181,6 +183,8 @@ title:鼠标悬停时显示的文本(可省略)
 
 ## 链接
 
+### 文字链接
+
 |名称|语法|效果
 |---|----|---
 |我的微博|`[微博](https://weibo.com/u/5746068346?refer_flag=1001030101_&is_all=1 "我的微博")`|[微博](https://weibo.com/u/5746068346?refer_flag=1001030101_&is_all=1 "我的微博")
@@ -194,17 +198,32 @@ title:鼠标悬停时显示的文本(可省略)
 上面那个微博的效果是一样的。
 比如：在文档末尾定义了
 [blog]:https://innovatorzhang.github.io "我的博客"
-之后，以后要使用这个URL只需要[blog]就行了，减少了很多的重复
+之后，以后要使用这个URL只需要[blog]就行了，减少了很多的重复。
+相对地址的使用同理。
+```
+
+### 图片链接
+
+    有文字链接的话，当然也有图片链接啊！这在平常的网页中十分常见
+    这里介绍一下图片链接的语法
+    
+|名称|语法|效果
+|---|----|---
+|链接到知乎0|`[![cat]][zhihu]`|[![cat]][zhihu]
+|链接知乎1|`[![miao](https://innovatorzhang.github.io/images/cat.gif "MiniCat")][zhihu]`|[![miao](https://innovatorzhang.github.io/images/cat.gif "MiniCat")][zhihu]
+|链接知乎2|`[![miao](https://innovatorzhang.github.io/images/cat.gif "MiniCat")](https://www.zhihu.com/people/zhang-zhong-hao-62 "我的知乎")`|[![miao](https://innovatorzhang.github.io/images/cat.gif "MiniCat")](https://www.zhihu.com/people/zhang-zhong-hao-62 "我的知乎")
+
+```
+通过上面的实例说明一下其实基础还是 []() 这个格式
+用图片实现链接其实就是将 [] 里面的提示字符用引入图片的语法改成了图片
 ```
 
 
 
 
 
-
-
-
-
+[cat]:https://innovatorzhang.github.io/images/cat.gif "MiniCat"
+[zz]:/images/one.gif "关爱智障"
 [SB]:/images/two.jpg "SB证"
 [zhihu]:https://www.zhihu.com/people/zhang-zhong-hao-62 "我的知乎"
 [blog]:https://innovatorzhang.github.io "我的博客"
